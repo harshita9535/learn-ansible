@@ -18,3 +18,8 @@
 
 #Play level variable can be accessed by all the tasks and roles
 #Task level variable can be accessed only by that task
+#Role level variable is accessible in that role tasks
+#Variable from cli is having higher precedence of any variable
+
+#IMP: if the value of any key is a variable then double quote it
+# ex: msg: {{ URL }}, this needs to be given as msg: "{{ URL }}
