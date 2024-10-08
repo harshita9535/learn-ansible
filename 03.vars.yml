@@ -6,3 +6,11 @@
     - name: Print variable
       ansible.builtin.debug:
         msg: URL_PLAY - {{ URL_PLAY }}
+    - name: Task variable
+      ansible.builtin.debug:
+        msg: URL_TASK - {{ URL_TASK }}
+      vars:
+        URL_TASKS: tasks.example.com
+
+
+#Play level variable can be accessed by all the tasks and roles
